@@ -8,15 +8,75 @@
 </head>
 <body>
     <header>
+        <h1>Movie Surfer</h1>
         <nav>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#popular">Popular</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Super Popular Brand Name</h1>
     </header>
+
+    <section id="introduction">
+        <h1>Welcome to Movie Surfer</h1>
+        <p>The webpage were you can dive into your hobby and see all sort of movies with the best quality.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="media/New_Release.png" alt="Recent Releases" width="214" height="230">
+                <h3>Recent Releases</h3>
+                <p>See the new releases of your favorite movies.</p>
+            </div>
+            <div class="service-card">
+                <img src="media/Search_Movie.png" alt="Search Library"width="214" height="230">
+                <h3>Search Library</h3>
+                <p>Search for older movies among our extensive library.</p>
+            </div>
+            <div class="service-card">
+                <img src="media/Upcoming_Movies.png" alt="Upcoming Movies"width="214" height="230">
+                <h3>Upcoming Movies</h3>
+                <p>See what new titles are going to be released.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular">
+        <h2>Popular Movies</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <a href="https://en.wikipedia.org/wiki/Avengers:_Endgame"><img src="media/Avengers_Endgame.jpg" alt="Avengers Endgame"></a>
+                <h3>Avengers Endgame</h3>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://en.wikipedia.org/wiki/John_Wick:_Chapter_4"><img src="media/John_Wick_4.jpg" alt="John Wick 4"></a>
+                <h3>John Wick 4</h3>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s_(film)"><img src="media/Five_Nights_At_Freddy's.jpg" alt="Five Nights At Freddy's"></a>
+                <h3>Five Nights At Freddy's</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
